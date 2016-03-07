@@ -11,6 +11,7 @@ body {
   overflow: hidden;
   width: 100%;
   height: 100%;
+  position: fixed;
 }
 
 #wrapper {
@@ -110,10 +111,9 @@ h6 a {
 
 /* MOBILE DETECTED*/
 
-/*html.mobile body {
-  width: 0;
-  height: 0;
-}*/
+html.mobile body {
+  position: relative;
+}
 
 
 html.mobile header {
@@ -148,20 +148,6 @@ html.mobile .btn:hover {
   -o-transition-delay: 0ms;
   -webkit-transition-delay: 0ms;
   transition-delay: 0ms;
-}
-
-/*
-
-html.mobile #shufflePlay {
-  bottom: 0;
-  top: 100px;
-  /*left: 50px;
-  width: 100%;
-  height: 100%;
-*/
-
-html.mobile #main {
-  /*position: relative;*/
 }
 
 html.mobile #shufflePlay {
