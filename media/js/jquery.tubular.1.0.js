@@ -92,7 +92,7 @@
                 e.target.playVideoAt(num);
                 e.target.setShuffle(true);
                 e.target.seekTo(options.start); 
-            }, 300);
+            }, 200);
             // e.target.playVideo();
         }
     
@@ -126,6 +126,18 @@
         $(window).on('resize.tubular', function() {
             resize();
         })
+        // $('body').on('click','.' + options.playButtonClass, function(e) { // play button
+        //     e.preventDefault();
+        //     player.playVideo();
+        // });
+        // $('body').on('click', '.' + options.pauseButtonClass, function(e) { // pause button
+        //     e.preventDefault();
+        //     player.pauseVideo();
+        // })
+        // $('body').on('click', '.' + options.muteButtonClass, function(e) { // mute button
+        //     e.preventDefault();
+        //     (player.isMuted()) ? player.unMute() : player.mute();
+        // })
     }
 
     // load yt iframe js api
